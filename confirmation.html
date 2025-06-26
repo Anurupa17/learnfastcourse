@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Thank You - LearnFast</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background: linear-gradient(135deg, #e0f7fa, #ffffff);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .success-box {
+      text-align: center;
+      background-color: #ffffff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      max-width: 500px;
+      animation: fadeIn 1s ease-out;
+    }
+
+    .checkmark {
+      font-size: 60px;
+      color: #2ecc71;
+      animation: pop 0.6s ease-out;
+    }
+
+    h1 {
+      color: #2ecc71;
+      margin-top: 10px;
+    }
+
+    p {
+      margin-top: 15px;
+      font-size: 16px;
+      color: #555;
+    }
+
+    nav {
+      margin-top: 30px;
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #0077cc;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      color: #005fa3;
+    }
+
+    @keyframes pop {
+      0% { transform: scale(0); opacity: 0; }
+      80% { transform: scale(1.2); opacity: 1; }
+      100% { transform: scale(1); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="success-box">
+    <div class="checkmark">✔️</div>
+    <h1>Thank You!</h1>
+    <p>Your registration has been submitted successfully.</p>
+    <p>We’ll get in touch with you soon.</p>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="course.html">Courses</a>
+      <a href="about.html">About Us</a>
+    </nav>
+  </div>
+</body>
+</html>
